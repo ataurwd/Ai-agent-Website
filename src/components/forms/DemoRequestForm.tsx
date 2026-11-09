@@ -55,6 +55,7 @@ export function DemoRequestForm() {
   const [feedbackMessage, setFeedbackMessage] = useState<string>("");
   const [isSimulated, setIsSimulated] = useState<boolean>(false);
   const [showSetupGuide, setShowSetupGuide] = useState<boolean>(false);
+  const [customFormId, setCustomFormId] = useState<string>("");
 
   // Validate a single field
   const validateField = (name: string, value: string): string => {
@@ -162,7 +163,7 @@ export function DemoRequestForm() {
       sourceUrl: typeof window !== "undefined" ? window.location.href : "",
     };
 
-    const result = await submitToFormspree(payload);
+    const result = await submitToFormspree(payload, customFormId);
 
     if (result.ok) {
       setStatus("success");
@@ -298,6 +299,19 @@ export function DemoRequestForm() {
             <li>Copy your 8-character Form ID (e.g., <code className="bg-slate-200/80 px-1 py-0.5 rounded font-mono">xpznkewq</code>).</li>
             <li>Set <code className="bg-slate-200/80 px-1 py-0.5 rounded font-mono">NEXT_PUBLIC_FORMSPREE_FORM_ID=your_id</code> in <code className="font-mono">.env.local</code>.</li>
           </ol>
+          <div className="pt-2 border-t border-slate-200">
+            <label htmlFor="custom_form_id_override" className="block text-[11px] font-semibold text-slate-700 mb-1">
+              Quick Live Test Override (Optional):
+            </label>
+            <input
+              type="text"
+              id="custom_form_id_override"
+              value={customFormId}
+              onChange={(e) => setCustomFormId(e.target.value.trim())}
+              placeholder="Paste Formspree ID to test immediately (e.g. xpznkewq)"
+              className="w-full px-2.5 py-1.5 rounded border border-slate-300 text-xs font-mono bg-white focus:outline-none focus:border-indigo-600"
+            />
+          </div>
           <p className="text-[11px] text-slate-500 pt-1">
             Submissions go directly from the client to Formspree via encrypted HTTPS. No API keys or email credentials are exposed.
           </p>
