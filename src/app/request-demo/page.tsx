@@ -42,7 +42,7 @@ export default function RequestDemoPage() {
   return (
     <div className="flex flex-col w-full bg-slate-50/50 min-h-screen">
       {/* Hero Header */}
-      <section className="pt-14 pb-12 bg-gradient-to-b from-indigo-50/60 via-white to-slate-50/50 border-b border-slate-200/80">
+      <section className="pt-14 pb-12 bg-[#f8faff] border-b border-slate-200">
         <Container size="default">
           <div className="max-w-3xl mx-auto text-center">
             <Badge variant="brand" className="mb-4">

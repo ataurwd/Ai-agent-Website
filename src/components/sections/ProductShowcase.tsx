@@ -24,17 +24,7 @@ export function ProductShowcase() {
   const [activeView, setActiveView] = useState<"terminal" | "approval" | "diff">("terminal");
 
   return (
-    <section className="py-20 sm:py-28 bg-slate-950 text-white relative overflow-hidden">
-      {/* Background radial gradients */}
-      <div
-        className="absolute top-1/4 -left-40 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute bottom-1/4 -right-40 w-96 h-96 bg-cyan-600/15 rounded-full blur-3xl pointer-events-none"
-        aria-hidden="true"
-      />
-
+    <section className="py-20 sm:py-28 bg-slate-950 text-white relative border-t border-b border-slate-800">
       <Container size="default">
         <SectionHeading
           badge="Product Showcase"
@@ -52,7 +42,7 @@ export function ProductShowcase() {
               onClick={() => setActiveView("terminal")}
               className={cn(
                 "px-4 py-2 rounded-lg transition-colors flex items-center gap-2",
-                activeView === "terminal" ? "bg-indigo-600 text-white shadow-sm" : "text-slate-400 hover:text-white"
+                activeView === "terminal" ? "bg-[#5B8CFF] text-white shadow-sm" : "text-slate-400 hover:text-white"
               )}
             >
               <Terminal className="w-4 h-4" aria-hidden="true" />
@@ -63,7 +53,7 @@ export function ProductShowcase() {
               onClick={() => setActiveView("approval")}
               className={cn(
                 "px-4 py-2 rounded-lg transition-colors flex items-center gap-2",
-                activeView === "approval" ? "bg-indigo-600 text-white shadow-sm" : "text-slate-400 hover:text-white"
+                activeView === "approval" ? "bg-[#5B8CFF] text-white shadow-sm" : "text-slate-400 hover:text-white"
               )}
             >
               <ShieldAlert className="w-4 h-4" aria-hidden="true" />
@@ -74,7 +64,7 @@ export function ProductShowcase() {
               onClick={() => setActiveView("diff")}
               className={cn(
                 "px-4 py-2 rounded-lg transition-colors flex items-center gap-2",
-                activeView === "diff" ? "bg-indigo-600 text-white shadow-sm" : "text-slate-400 hover:text-white"
+                activeView === "diff" ? "bg-[#5B8CFF] text-white shadow-sm" : "text-slate-400 hover:text-white"
               )}
             >
               <GitBranch className="w-4 h-4" aria-hidden="true" />

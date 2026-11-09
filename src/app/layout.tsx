@@ -61,11 +61,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="min-h-screen flex flex-col font-sans bg-white text-slate-900 antialiased selection:bg-indigo-500 selection:text-white">
+      <body className="min-h-screen flex flex-col font-sans bg-white text-slate-900 antialiased selection:bg-[#5B8CFF] selection:text-white">
         {/* Skip to Content for WCAG keyboard accessibility */}
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-indigo-600 focus:text-white focus:rounded-lg focus:shadow-lg focus:outline-none"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#5B8CFF] focus:text-white focus:rounded-lg focus:shadow-lg focus:outline-none"
         >
           Skip to main content
         </a>

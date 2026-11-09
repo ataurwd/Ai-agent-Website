@@ -17,7 +17,7 @@ export default function UseCasesPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero */}
-      <section className="pt-16 pb-20 bg-gradient-to-b from-indigo-50/50 via-white to-white border-b border-slate-200/80">
+      <section className="pt-16 pb-20 bg-[#f8faff] border-b border-slate-200">
         <Container size="default">
           <div className="max-w-3xl mx-auto text-center">
             <Badge variant="brand" className="mb-4">
@@ -42,7 +42,7 @@ export default function UseCasesPage() {
               <div
                 key={uc.id}
                 id={uc.id}
-                className="rounded-3xl border border-slate-200/90 p-8 sm:p-12 shadow-card hover:border-indigo-200 transition-all bg-gradient-to-br from-white via-white to-slate-50/50"
+                className="rounded-3xl border border-slate-200/90 p-8 sm:p-12 shadow-card hover:border-[#5B8CFF]/40 transition-all bg-white"
               >
                 <div className="flex flex-wrap items-center justify-between gap-3 mb-6">
                   <Badge variant="brand" size="md">

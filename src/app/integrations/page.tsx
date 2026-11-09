@@ -34,7 +34,7 @@ export default function IntegrationsPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero */}
-      <section className="pt-16 pb-20 bg-gradient-to-b from-indigo-50/50 via-white to-white border-b border-slate-200/80">
+      <section className="pt-16 pb-20 bg-[#f8faff] border-b border-slate-200">
         <Container size="default">
           <div className="max-w-3xl mx-auto text-center">
             <Badge variant="brand" className="mb-4">
@@ -124,13 +124,13 @@ export default function IntegrationsPage() {
           </div>
 
           {/* Custom Integration Request */}
-          <div className="max-w-3xl mx-auto rounded-2xl bg-gradient-to-r from-indigo-900 to-slate-900 text-white p-8 sm:p-10 text-center shadow-xl">
+          <div className="max-w-3xl mx-auto rounded-2xl bg-slate-900 border border-slate-800 text-white p-8 sm:p-10 text-center shadow-xl">
             <h3 className="text-2xl font-bold mb-2">Have a Custom Internal Tool or Proprietary Service?</h3>
-            <p className="text-sm text-indigo-200 mb-6 max-w-xl mx-auto">
+            <p className="text-sm text-slate-300 mb-6 max-w-xl mx-auto">
               Opsvian supports the open Model Context Protocol (MCP) standard, allowing you to connect
               internal microservices and run custom tool schemas in under an hour.
             </p>
-            <Button href="/request-demo" variant="primary" size="lg" className="bg-white text-indigo-900 hover:bg-indigo-50 border-white">
+            <Button href="/request-demo" variant="primary" size="lg" className="bg-[#5B8CFF] hover:bg-[#4474f2] text-white">
               Discuss Custom MCP Integration &rarr;
             </Button>
           </div>

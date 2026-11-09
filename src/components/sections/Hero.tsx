@@ -17,24 +17,18 @@ import {
 
 export function Hero() {
   return (
-    <section className="relative pt-12 pb-20 sm:pt-16 sm:pb-28 overflow-hidden bg-gradient-to-b from-indigo-50/40 via-white to-white">
-      {/* Background Glow Orbs */}
-      <div
-        className="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-indigo-300/20 via-violet-300/20 to-cyan-200/20 blur-3xl pointer-events-none rounded-full"
-        aria-hidden="true"
-      />
-
+    <section className="relative pt-12 pb-20 sm:pt-16 sm:pb-28 bg-[#f8faff] border-b border-slate-200">
       <Container size="default">
         {/* Text and Headline Area */}
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center mb-12 sm:mb-16">
           {/* Announcement Badge */}
           <Link
             href="/product"
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-700 text-xs font-medium mb-6 shadow-subtle hover:bg-indigo-100/60 transition-colors group"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f0f5ff] border border-[#c7dbff] text-[#264cb5] text-xs font-medium mb-6 shadow-subtle hover:bg-[#e0ebff] transition-colors group"
           >
-            <span className="w-2 h-2 rounded-full bg-indigo-600 animate-pulse" aria-hidden="true" />
+            <span className="w-2 h-2 rounded-full bg-[#5B8CFF] animate-pulse" aria-hidden="true" />
             <span className="font-semibold">Autonomous Operations Engine</span>
-            <span className="text-indigo-400">|</span>
+            <span className="text-[#a3c4ff]">|</span>
             <span className="text-slate-600 group-hover:text-slate-900 inline-flex items-center gap-1">
               Explore Architecture &rarr;
             </span>
@@ -43,7 +37,7 @@ export function Hero() {
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 text-balance leading-[1.12]">
             Put Autonomous AI to Work Across Your{" "}
-            <span className="bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-700 bg-clip-text text-transparent">
+            <span className="text-[#5B8CFF]">
               Cloud & Dev Stack
             </span>
           </h1>
@@ -60,7 +54,7 @@ export function Hero() {
               href="/request-demo"
               variant="primary"
               size="lg"
-              className="w-full sm:w-auto justify-center shadow-lg shadow-indigo-500/20"
+              className="w-full sm:w-auto justify-center shadow-lg shadow-[#5B8CFF]/20"
               rightIcon={<ArrowRight className="w-4 h-4" aria-hidden="true" />}
             >
               Request an Enterprise Demo
@@ -83,7 +77,7 @@ export function Hero() {
               <span>Zero custom backend required</span>
             </span>
             <span className="flex items-center gap-1.5">
-              <ShieldCheck className="w-4 h-4 text-indigo-600" aria-hidden="true" />
+              <ShieldCheck className="w-4 h-4 text-[#5B8CFF]" aria-hidden="true" />
               <span>Deterministic Policy Gates</span>
             </span>
             <span className="flex items-center gap-1.5">
@@ -95,8 +89,7 @@ export function Hero() {
 
         {/* Live Interactive Product Visualization */}
         <div className="relative mx-auto max-w-5xl">
-          <div className="absolute -inset-1.5 bg-gradient-to-r from-indigo-500/20 via-violet-500/20 to-cyan-500/20 rounded-3xl blur-xl opacity-75" />
-          <div className="relative">
+          <div className="relative rounded-2xl border border-slate-800 shadow-2xl">
             <AgentDashboard />
           </div>
         </div>

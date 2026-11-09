@@ -25,10 +25,10 @@ export function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <Link
               href="/"
-              className="inline-flex items-center gap-2.5 text-white group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg"
+              className="inline-flex items-center gap-2.5 text-white group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5B8CFF] rounded-lg"
               aria-label={`${siteConfig.name} Home`}
             >
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-violet-500 flex items-center justify-center text-white shadow-sm">
+              <div className="w-8 h-8 rounded-lg bg-[#5B8CFF] flex items-center justify-center text-white shadow-sm">
                 <Cpu className="w-4 h-4" aria-hidden="true" />
               </div>
               <span className="font-bold text-lg text-white tracking-tight">

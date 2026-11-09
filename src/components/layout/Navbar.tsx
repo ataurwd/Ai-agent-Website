@@ -63,16 +63,16 @@ export function Navbar() {
           {/* Logo & Brand */}
           <Link
             href="/"
-            className="flex items-center gap-2.5 text-slate-900 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-lg py-1 px-1.5 -ml-1.5"
+            className="flex items-center gap-2.5 text-slate-900 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5B8CFF] rounded-lg py-1 px-1.5 -ml-1.5"
             aria-label={`${siteConfig.name} Home`}
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-700 to-violet-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/25 group-hover:scale-105 transition-transform duration-200">
+            <div className="w-9 h-9 rounded-xl bg-[#5B8CFF] flex items-center justify-center text-white shadow-md shadow-[#5B8CFF]/25 group-hover:scale-105 transition-transform duration-200">
               <Cpu className="w-5 h-5" aria-hidden="true" />
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg tracking-tight flex items-center gap-1.5">
                 {siteConfig.name}
-                <span className="text-[10px] font-semibold uppercase tracking-wider bg-indigo-50 text-indigo-700 px-1.5 py-0.5 rounded border border-indigo-200/60">
+                <span className="text-[10px] font-semibold uppercase tracking-wider bg-[#f0f5ff] text-[#264cb5] px-1.5 py-0.5 rounded border border-[#c7dbff]">
                   AI
                 </span>
               </span>
@@ -91,9 +91,9 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "px-3 py-2 rounded-md transition-colors relative hover:text-slate-900 hover:bg-slate-100/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500",
+                    "px-3 py-2 rounded-md transition-colors relative hover:text-slate-900 hover:bg-slate-100/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5B8CFF]",
                     isActive
-                      ? "text-indigo-600 font-semibold bg-indigo-50/60"
+                      ? "text-[#5B8CFF] font-semibold bg-[#f0f5ff]"
                       : "text-slate-600"
                   )}
                 >
@@ -153,7 +153,7 @@ export function Navbar() {
                   className={cn(
                     "flex items-center justify-between px-3.5 py-3 rounded-lg text-base font-medium transition-colors",
                     isActive
-                      ? "bg-indigo-50 text-indigo-700 font-semibold"
+                      ? "bg-[#f0f5ff] text-[#264cb5] font-semibold"
                       : "text-slate-700 hover:bg-slate-50"
                   )}
                 >

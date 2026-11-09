@@ -16,7 +16,7 @@ export function Badge({
   ...props
 }: BadgeProps) {
   const variantStyles = {
-    brand: "bg-indigo-50 text-indigo-700 border-indigo-200/80 ring-1 ring-indigo-500/10",
+    brand: "bg-[#f0f5ff] text-[#264cb5] border-[#c7dbff] ring-1 ring-[#5B8CFF]/20",
     outline: "bg-transparent text-slate-700 border-slate-200 ring-1 ring-slate-300/40",
     success: "bg-emerald-50 text-emerald-700 border-emerald-200/80 ring-1 ring-emerald-500/10",
     warning: "bg-amber-50 text-amber-700 border-amber-200/80 ring-1 ring-amber-500/10",

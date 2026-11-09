@@ -49,7 +49,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero */}
-      <section className="pt-16 pb-20 bg-gradient-to-b from-indigo-50/50 via-white to-white border-b border-slate-200/80">
+      <section className="pt-16 pb-20 bg-[#f8faff] border-b border-slate-200">
         <Container size="default">
           <div className="max-w-3xl mx-auto text-center">
             <Badge variant="brand" className="mb-4">
@@ -82,7 +82,7 @@ export default function AboutPage() {
             </div>
 
             <div className="p-8 sm:p-10 rounded-3xl bg-slate-900 text-white border border-slate-800 space-y-4 shadow-xl">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-indigo-500 to-violet-500 text-white flex items-center justify-center">
+              <div className="w-12 h-12 rounded-2xl bg-[#5B8CFF] text-white flex items-center justify-center">
                 <Sparkles className="w-6 h-6" aria-hidden="true" />
               </div>
               <h2 className="text-2xl font-bold text-white tracking-tight">Our Vision</h2>

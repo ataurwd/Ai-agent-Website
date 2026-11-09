@@ -11,18 +11,32 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // Target Brand Color #5B8CFF and derived solid shades
         brand: {
-          50: "#eef2ff",
-          100: "#e0e7ff",
-          200: "#c7d2fe",
-          300: "#a5b4fc",
-          400: "#818cf8",
-          500: "#6366f1",
-          600: "#4f46e5",
-          700: "#4338ca",
-          800: "#3730a3",
-          900: "#312e81",
-          950: "#1e1b4b",
+          50: "#f0f5ff",
+          100: "#e0ebff",
+          200: "#c7dbff",
+          300: "#a3c4ff",
+          400: "#7da8ff",
+          500: "#5B8CFF", // Exact primary color requested
+          600: "#5B8CFF", // Primary buttons and active states
+          700: "#4474f2", // Hover
+          800: "#315edb",
+          900: "#1e3a8a",
+          950: "#142557",
+        },
+        indigo: {
+          50: "#f0f5ff",
+          100: "#e0ebff",
+          200: "#c7dbff",
+          300: "#a3c4ff",
+          400: "#7da8ff",
+          500: "#5B8CFF",
+          600: "#5B8CFF",
+          700: "#4474f2",
+          800: "#315edb",
+          900: "#1e3a8a",
+          950: "#142557",
         },
         navy: {
           800: "#0f172a",
@@ -31,9 +45,9 @@ const config: Config = {
           950: "#070a12",
         },
         accent: {
-          cyan: "#06b6d4",
+          cyan: "#5B8CFF",
           emerald: "#10b981",
-          violet: "#8b5cf6",
+          violet: "#5B8CFF",
           amber: "#f59e0b",
         }
       },
@@ -41,31 +55,14 @@ const config: Config = {
         sans: ["var(--font-inter)", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
         mono: ["var(--font-mono)", "JetBrains Mono", "Fira Code", "monospace"],
       },
-      animation: {
-        "pulse-subtle": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
-        "float": "float 6s ease-in-out infinite",
-        "glow": "glow 8s ease-in-out infinite",
-      },
-      keyframes: {
-        float: {
-          "0%, 100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-8px)" },
-        },
-        glow: {
-          "0%, 100%": { opacity: "0.4" },
-          "50%": { opacity: "0.8" },
-        }
-      },
       boxShadow: {
         "subtle": "0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02)",
         "card": "0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.02)",
         "card-hover": "0 12px 32px -4px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04)",
-        "glow": "0 0 50px -10px rgba(99, 102, 241, 0.25)",
-        "glow-cyan": "0 0 50px -10px rgba(6, 182, 212, 0.25)",
+        "brand": "0 4px 14px 0 rgba(91, 140, 255, 0.3)",
       }
     },
   },
   plugins: [],
 };
 export default config;
-

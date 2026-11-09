@@ -25,7 +25,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero */}
-      <section className="pt-16 pb-16 bg-gradient-to-b from-indigo-50/50 via-white to-white border-b border-slate-200/80">
+      <section className="pt-16 pb-16 bg-[#f8faff] border-b border-slate-200">
         <Container size="default">
           <div className="max-w-3xl mx-auto text-center">
             <Badge variant="brand" className="mb-4">

@@ -5,21 +5,12 @@ import { ArrowRight, ShieldCheck, Zap, Sparkles } from "lucide-react";
 
 export function FinalCTA() {
   return (
-    <section className="py-20 sm:py-28 bg-gradient-to-b from-white to-indigo-50/60 border-t border-slate-200/80 relative overflow-hidden">
-      {/* Background glow orb */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"
-        aria-hidden="true"
-      />
-
+    <section className="py-20 sm:py-28 bg-[#f8faff] border-t border-slate-200 relative">
       <Container size="default">
-        <div className="rounded-3xl bg-slate-950 text-white p-8 sm:p-14 lg:p-16 relative overflow-hidden shadow-2xl border border-slate-800 text-center max-w-5xl mx-auto">
-          {/* Subtle grid pattern background */}
-          <div className="absolute inset-0 bg-dot-pattern-dark opacity-20 pointer-events-none" />
-
+        <div className="rounded-3xl bg-slate-950 text-white p-8 sm:p-14 lg:p-16 relative shadow-2xl border border-slate-800 text-center max-w-5xl mx-auto">
           <div className="relative z-10 max-w-2xl mx-auto space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-950/80 border border-indigo-700/60 text-indigo-300 text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5 text-indigo-400" aria-hidden="true" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-[#5B8CFF] text-xs font-semibold">
+              <Sparkles className="w-3.5 h-3.5 text-[#5B8CFF]" aria-hidden="true" />
               <span>Transform Your Cloud Operations Today</span>
             </div>
 
@@ -37,7 +28,7 @@ export function FinalCTA() {
                 href="/request-demo"
                 variant="primary"
                 size="lg"
-                className="w-full sm:w-auto shadow-lg shadow-indigo-500/25 justify-center"
+                className="w-full sm:w-auto shadow-lg shadow-[#5B8CFF]/25 justify-center"
                 rightIcon={<ArrowRight className="w-4 h-4" aria-hidden="true" />}
               >
                 Request an Enterprise Demo
@@ -58,7 +49,7 @@ export function FinalCTA() {
                 <span>Deterministic human approval gates</span>
               </span>
               <span className="flex items-center gap-1.5">
-                <Zap className="w-4 h-4 text-indigo-400" aria-hidden="true" />
+                <Zap className="w-4 h-4 text-[#5B8CFF]" aria-hidden="true" />
                 <span>Zero custom backend needed</span>
               </span>
               <span>100% Client-Side + Formspree</span>

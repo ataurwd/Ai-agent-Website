@@ -32,11 +32,11 @@ export function SolutionSection() {
             return (
               <div
                 key={sol.id}
-                className="rounded-2xl border border-slate-200/90 p-8 hover:border-indigo-300 hover:shadow-card transition-all duration-300 bg-gradient-to-br from-white to-slate-50/50 flex flex-col justify-between"
+                className="rounded-2xl border border-slate-200/90 p-8 hover:border-[#5B8CFF]/50 hover:shadow-card transition-all duration-300 bg-white flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-6">
-                    <div className="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-xl bg-[#f0f5ff] border border-[#c7dbff] flex items-center justify-center">
                       {icon}
                     </div>
                     <span className="text-xs font-mono font-bold text-slate-400">
@@ -53,7 +53,7 @@ export function SolutionSection() {
                   </p>
                 </div>
 
-                <div className="pt-6 mt-6 border-t border-slate-100 flex items-center gap-2 text-xs text-indigo-600 font-semibold">
+                <div className="pt-6 mt-6 border-t border-slate-100 flex items-center gap-2 text-xs text-[#5B8CFF] font-semibold">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" aria-hidden="true" />
                   <span>Enforced by policy engine & audit logs</span>
                 </div>
@@ -63,23 +63,23 @@ export function SolutionSection() {
         </div>
 
         {/* Feature Banner */}
-        <div className="rounded-2xl bg-indigo-900 text-white p-8 sm:p-12 relative overflow-hidden shadow-xl">
+        <div className="rounded-2xl bg-slate-900 border border-slate-800 text-white p-8 sm:p-12 relative overflow-hidden shadow-xl">
           <div className="relative z-10 max-w-2xl">
-            <span className="text-xs font-semibold uppercase tracking-wider text-indigo-300">
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#5B8CFF]">
               Enterprise Governance
             </span>
             <h3 className="text-2xl sm:text-3xl font-bold tracking-tight mt-2 mb-4">
               Autonomous execution without sacrificing control
             </h3>
-            <p className="text-indigo-200 text-sm sm:text-base leading-relaxed mb-6">
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
               Unlike experimental chatbots, Opsvian treats every operational command as a mission-critical transaction.
               High-impact mutations require multi-factor human confirmation, ensuring complete trust in production.
             </p>
             <div className="flex flex-wrap items-center gap-4">
-              <Button href="/security" variant="primary" className="bg-white text-indigo-900 hover:bg-indigo-50 border-white">
+              <Button href="/security" variant="primary" className="bg-[#5B8CFF] hover:bg-[#4474f2] text-white">
                 Review Security Model
               </Button>
-              <Button href="/request-demo" variant="outline" className="text-white border-indigo-400 hover:bg-indigo-800">
+              <Button href="/request-demo" variant="outline" className="text-white border-slate-700 hover:bg-slate-800">
                 Book Technical Demo &rarr;
               </Button>
             </div>

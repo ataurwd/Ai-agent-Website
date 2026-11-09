@@ -43,7 +43,7 @@ export function WorkflowVisualization() {
               className={cn(
                 "p-3.5 rounded-xl border text-left transition-all duration-200 relative group flex flex-col justify-between focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500",
                 isSelected
-                  ? "bg-indigo-600 text-white border-indigo-600 shadow-md shadow-indigo-500/20"
+                  ? "bg-[#5B8CFF] text-white border-[#5B8CFF] shadow-md shadow-[#5B8CFF]/20"
                   : "bg-white hover:bg-slate-50 text-slate-700 border-slate-200 shadow-subtle"
               )}
             >
@@ -51,12 +51,12 @@ export function WorkflowVisualization() {
                 <span
                   className={cn(
                     "w-6 h-6 rounded-full text-xs font-bold flex items-center justify-center transition-colors",
-                    isSelected ? "bg-white text-indigo-700" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"
+                    isSelected ? "bg-white text-[#264cb5]" : "bg-slate-100 text-slate-600 group-hover:bg-slate-200"
                   )}
                 >
                   0{item.step}
                 </span>
-                <span className={cn("text-[10px] font-semibold uppercase tracking-wider", isSelected ? "text-indigo-100" : "text-slate-400")}>
+                <span className={cn("text-[10px] font-semibold uppercase tracking-wider", isSelected ? "text-blue-100" : "text-slate-400")}>
                   {item.badge}
                 </span>
               </div>
@@ -69,14 +69,11 @@ export function WorkflowVisualization() {
       </div>
 
       {/* Deep-Dive Card for Active Step */}
-      <div className="rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 p-6 sm:p-10 text-white shadow-xl relative overflow-hidden">
-        {/* Subtle background glow */}
-        <div className="absolute top-0 right-0 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
-
+      <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 sm:p-10 text-white shadow-xl relative overflow-hidden">
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 space-y-4">
             <div className="flex items-center gap-2">
-              <Badge variant="dark" className="bg-indigo-900/60 text-indigo-300 border-indigo-700">
+              <Badge variant="dark" className="bg-[#1e293b] text-[#5B8CFF] border-slate-700">
                 Step 0{currentStepData.step} of 06
               </Badge>
               <span className="text-xs font-mono text-slate-400">{currentStepData.badge}</span>
@@ -91,7 +88,7 @@ export function WorkflowVisualization() {
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400">
-              <span className="flex items-center gap-1.5 text-indigo-400">
+              <span className="flex items-center gap-1.5 text-[#5B8CFF]">
                 <Lock className="w-3.5 h-3.5" aria-hidden="true" />
                 Deterministic Verification
               </span>
@@ -100,15 +97,15 @@ export function WorkflowVisualization() {
             </div>
           </div>
 
-          <div className="lg:col-span-5 bg-slate-950/80 rounded-xl p-5 border border-slate-800 text-xs font-mono text-slate-300 space-y-3">
+          <div className="lg:col-span-5 bg-slate-900 rounded-xl p-5 border border-slate-800 text-xs font-mono text-slate-300 space-y-3">
             <div className="flex items-center justify-between pb-2 border-b border-slate-800 text-slate-400">
               <span className="flex items-center gap-1.5">
-                <Code2 className="w-3.5 h-3.5 text-indigo-400" aria-hidden="true" />
+                <Code2 className="w-3.5 h-3.5 text-[#5B8CFF]" aria-hidden="true" />
                 <span>Runtime Contract</span>
               </span>
               <span className="text-emerald-400">Status: Active</span>
             </div>
-            <p className="text-indigo-300">
+            <p className="text-[#7da8ff]">
               // Step {currentStepData.step} Policy Guardrail
             </p>
             <p className="text-slate-400 leading-relaxed">
@@ -139,7 +136,7 @@ export function WorkflowVisualization() {
                 key={s.step}
                 className={cn(
                   "w-2 h-2 rounded-full transition-all",
-                  s.step === activeStep ? "w-6 bg-indigo-500" : "bg-slate-700"
+                  s.step === activeStep ? "w-6 bg-[#5B8CFF]" : "bg-slate-700"
                 )}
               />
             ))}
@@ -148,7 +145,7 @@ export function WorkflowVisualization() {
             type="button"
             onClick={() => setActiveStep((prev) => Math.min(6, prev + 1))}
             disabled={activeStep === 6}
-            className="text-xs font-medium text-indigo-400 hover:text-indigo-300 disabled:opacity-30 disabled:pointer-events-none transition-colors"
+            className="text-xs font-medium text-[#5B8CFF] hover:text-[#7da8ff] disabled:opacity-30 disabled:pointer-events-none transition-colors"
           >
             Next Stage &rarr;
           </button>
