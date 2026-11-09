@@ -453,3 +453,4 @@ export const faqData: FAQItem[] = [
       "The form provides a helpful development preview state: it validates the user input, checks the spam honeypot, simulates the payload, and displays a friendly notice that the website is in development mode waiting for your Formspree Form ID in `.env.local`.",
   },
 ];
+

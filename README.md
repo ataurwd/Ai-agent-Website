@@ -170,3 +170,4 @@ Because this project is 100% frontend-only with zero custom backends or database
 
 ## 🔒 Security & Privacy Notice
 All legal policy pages (`/privacy-policy` and `/terms`) are structured drafts with clearly designated placeholders (e.g., `[Opsvian Technologies Inc.]`, `[Jurisdiction]`) marked for corporate legal counsel review.
+

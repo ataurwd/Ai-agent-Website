@@ -79,3 +79,4 @@ export interface FAQItem {
   answer: string;
   category: "general" | "security" | "integration" | "deployment";
 }
+

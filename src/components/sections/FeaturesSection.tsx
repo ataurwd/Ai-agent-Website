@@ -7,6 +7,19 @@ import { Button } from "@/components/ui/Button";
 import { ArrowRight } from "lucide-react";
 
 export function FeaturesSection() {
+  // Spans configured for a 6-column Bento Grid on large screens:
+  // Row 1: 4 + 2 = 6 (Full)
+  // Row 2: 2 + 4 = 6 (Full)
+  // Row 3: 3 + 3 = 6 (Full, 50/50 split with zero empty gaps)
+  const colSpans = [
+    "lg:col-span-4 md:col-span-1",
+    "lg:col-span-2 md:col-span-1",
+    "lg:col-span-2 md:col-span-1",
+    "lg:col-span-4 md:col-span-1",
+    "lg:col-span-3 md:col-span-1",
+    "lg:col-span-3 md:col-span-1",
+  ];
+
   return (
     <section className="py-20 sm:py-28 bg-slate-50/60 border-t border-slate-200/80">
       <Container size="default">
@@ -16,13 +29,13 @@ export function FeaturesSection() {
           subtitle="Explore the verified architecture that powers multi-step reasoning, tool coordination, and deterministic policy enforcement."
         />
 
-        {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {/* Balanced Bento Grid (Zero empty gaps) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 mb-12">
           {featuresData.map((feat, idx) => (
             <FeatureCard
               key={feat.id}
               feature={feat}
-              isLarge={idx === 0 || idx === 3}
+              colSpan={colSpans[idx] || "lg:col-span-2 md:col-span-1"}
             />
           ))}
         </div>
